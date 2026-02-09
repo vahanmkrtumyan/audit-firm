@@ -103,7 +103,7 @@ function Footer5() {
                                 </li>
                                 <li>
                                 <i className="fa-light fa-envelope"/>
-                                <Link to="/">support@gmail.com</Link>
+                                <Link to="/">info@tvs.am </Link>
                                 </li>
                                 <li>
                                 <i className="fa-light fa-phone-flip"/>

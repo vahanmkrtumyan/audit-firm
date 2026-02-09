@@ -80,7 +80,6 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                             <Link to="/">012 210 001</Link>
                         </div>
                         </div>
-                        <Link className="btn-two" to="/page-contact">Contact Now</Link>
                     </div>
                     <div className="mobile-nav-toggler d-block d-lg-none" onClick={handleOpen}><i className="icon lnr-icon-bars"/></div>
                     {/* Mobile Nav toggler */}

@@ -67,11 +67,11 @@ function Footer6() {
                             <div className="footer-widget contact-widget">
                                 <h4 className="widget-title">Locations</h4>
                                 <div className="widget-content">
-                                <h5 className="text">55 Main Street, 2nd block Malborne, Australia</h5>
+                                <h5 className="text">Գյուլբենկյան փողոց, 27 շենք, 5/1 տարածք</h5>
                                 </div>
                                 <h4 className="widget-title mt-30">Contact</h4>
                                 <div className="widget-content">
-                                <Link to="/">support@gmail.com</Link>
+                                <Link to="/">info@tvs.am </Link>
                                 <h4 className="nuber"><Link to="/">+880 (123) 456 88</Link></h4>
                                 </div>
                             </div>

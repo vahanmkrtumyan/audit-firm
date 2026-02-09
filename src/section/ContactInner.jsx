@@ -120,7 +120,7 @@ function ContactSection() {
                 </div>
                 <div className="google-map">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60838472.930255905!2d54.913433238070375!3d21.45730366517529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3663f18a24cbe857%3A0xa9416bfcd3a0f459!2sAsia!5e0!3m2!1sen!2sbd!4v1746550690065!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.409430456686!2d44.49655011218!3d40.19535057135719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd0019f9b4f3%3A0x178792551875a28a!2z1LPVtdW41oLVrNWi1aXVttWv1bXVodW2Mjk!5e1!3m2!1sen!2sam!4v1770658352547!5m2!1sen!2sam"
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"

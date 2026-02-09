@@ -99,17 +99,7 @@ function Footer({ handleOpen, searchToggle, }) {
                         <div className="footer-widget links-widget">
                             <h4 className="widget-title">Signup Newsletter</h4>
                             <div className="input-field">
-                            <label htmlFor="email" className="sr-only">Email Address</label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                placeholder="Email Address" 
-                                autoComplete="email"
-                            />
-                            <Link className="btn-one-rounded" to="#0">
-                                Sign up now <i className="fa-regular fa-angle-right" />
-                            </Link>
+                           
                             </div>
                             <ul className="footer-nav">
                             <li><Link to="/"><i className="fa-brands fa-facebook-f"/></Link></li>
