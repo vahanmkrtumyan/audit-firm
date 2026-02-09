@@ -27,32 +27,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
         <>
             <header className={`main-header header-style-one ${scroll ? "fixed-header" : ""} ${searchToggle ? "moblie-search-active" : ""}`}>
             {/* Header Top */}
-            <div className="header-top">
-                <div className="auto-container">
-                <div className="top-left">
-                    {/* Info List */}
-                    <ul className="info-list">
-                    <li><i className="fa-solid fa-envelope"/> <Link to="/">needhelp@company.com</Link>
-                    </li>
-                    <li><i className="fa-solid fa-location-dot"/> 6391 Elgin St. Celina, Delaware 10299</li>
-                    </ul>
-                </div>
-
-                <div className="top-right">
-                    <ul className="useful-links">
-                    <li><Link to="/page-about">About</Link></li>
-                    <li><Link to="/page-faq">Faqs</Link></li>
-                    <li><Link to="/page-contact">Contact</Link></li>
-                    </ul>
-                    <ul className="top-social-icon">
-                    <li><Link to="#"><i className="fa-brands fa-facebook-f"/></Link></li>
-                    <li><Link to="#"><i className="fa-brands fa-instagram"/></Link></li>
-                    <li><Link to="#"><i className="fa-brands fa-x-twitter"/></Link></li>
-                    <li><Link to="#"><i className="fa-brands fa-linkedin-in"/></Link></li>
-                    </ul>
-                </div>
-                </div>
-            </div>
+          
             {/* <!-- Header Top --> */}
 
             {/* <!-- Main box --> */}
