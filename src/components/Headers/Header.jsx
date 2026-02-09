@@ -77,7 +77,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                         <i className="fa-solid fa-phone ring__animation"/>
                         <div>
                             <h6 className="title">Phone:</h6>
-                            <Link to="/">+00 2222 222 00</Link>
+                            <Link to="/">012 210 001</Link>
                         </div>
                         </div>
                         <Link className="btn-two" to="/page-contact">Contact Now</Link>

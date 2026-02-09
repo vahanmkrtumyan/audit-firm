@@ -61,8 +61,8 @@ function ContactSection() {
                   </svg>
                 </div>
                 <h4 className="title">address line</h4>
-                <p className="text">Bowery St, New York, 37 USA
-                  NY 10013,USA</p>
+                <p className="text">Երևան, 0033, Արաբկիր, 
+                  Գյուլբենկյան փողոց, 27 շենք, 5/1 տարածք</p>
               </div>
             </div>
           </div>
@@ -84,8 +84,8 @@ function ContactSection() {
 
                 </div>
                 <h4 className="title">address line</h4>
-                <p className="text">+1255 - 568 - 6523 4374-221
-                  +1255 - 568 - 6523</p>
+                <p className="text">012 210 001
+                  </p>
               </div>
             </div>
           </div>
@@ -100,7 +100,10 @@ function ContactSection() {
                   </svg>
                 </div>
                 <h4 className="title">Mail Adress</h4>
-                <p className="text">email@example.com <br/> info@yourdomain.com</p>
+                <p className="text">info@tvs.am </p>
+                <p className="text"></p>
+                <p className="text"></p>
+
               </div>
             </div>
           </div>
