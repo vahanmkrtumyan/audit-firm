@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./i18n"; // Initialize i18n
 import Home1 from "./pages/index";
 import Home1Single from "./pages/index-1-single";
 import Home1Dark from "./pages/index-1-dark";
@@ -66,7 +67,7 @@ function App() {
         <Route path="/index-7-single" element={<Home7Single />} />
         <Route path="/index-7-dark" element={<Home7Dark />} />
         <Route path="/news-details" element={<NewsDetails />} />
-        <Route path="/news-grid" element={<NewsGrid />} /> 
+        <Route path="/news-grid" element={<NewsGrid />} />
         <Route path="*" element={<PageError />} />
         <Route path="/news-grid" element={<NewsGrid />} />
         <Route path="/page-about" element={<PageAbout />} />
@@ -80,11 +81,11 @@ function App() {
         <Route path="/page-team-details" element={<PageTeamDetails />} />
         <Route path="/page-team" element={<PageTeam />} />
         <Route path="/page-testimonial" element={<PageTestimonial />} />
-        <Route path="/shop-cart" element={<ShopCart />} /> 
+        <Route path="/shop-cart" element={<ShopCart />} />
         <Route path="/shop-checkout" element={<ShopCheckout />} />
         <Route path="/shop-product-details" element={<ShopProductDetails />} />
         <Route path="/shop-products-sidebar" element={<ShopSidebar />} />
-        <Route path="/shop-products" element={<ShopProducts />} /> 
+        <Route path="/shop-products" element={<ShopProducts />} />
       </Routes>
     </Router>
   );
