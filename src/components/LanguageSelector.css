@@ -82,6 +82,8 @@
   cursor: pointer;
   transition: background 0.2s ease;
   color: #333;
+  margin-right: 0;
+  width: 100%;
 }
 
 .language-option:hover {

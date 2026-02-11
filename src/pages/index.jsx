@@ -1,7 +1,6 @@
-import React from "react";
-import Layout from '../layouts/Layout';
-import Banner from '../section/Home1/Banner';
-import About from '../section/Home1/About';
+import Layout from "../layouts/Layout";
+import Banner from "../section/Home1/Banner";
+import About from "../section/Home1/About";
 import Service from "../section/Home1/Service";
 import Choose from "../section/Home1/Choose";
 import Growth from "../section/Home1/Growth";
@@ -14,27 +13,25 @@ import Testimonial from "../section/Home1/Testimonial";
 import News from "../section/Home1/News";
 
 function Home1() {
-    return (
-        <>
-
-        <div className="page-wrapper">
-            <Layout>
-                <Banner />
-                <About />
-                <Service />
-                <Choose />
-                <Growth />
-                <Processing />
-                <Case />
-                <Strategy />
-                <Team />
-                <Faqs />
-                <Testimonial />
-                <News />
-            </Layout>
-        </div>
-
-        </>
-    );
+  return (
+    <>
+      <div className="page-wrapper">
+        <Layout FooterStyle="two">
+          <Banner />
+          <About />
+          <Service />
+          <Choose />
+          <Growth />
+          <Processing />
+          <Case />
+          <Strategy />
+          <Team />
+          <Faqs />
+          <Testimonial />
+          <News />
+        </Layout>
+      </div>
+    </>
+  );
 }
 export default Home1;
