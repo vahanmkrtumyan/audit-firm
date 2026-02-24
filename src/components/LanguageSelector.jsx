@@ -30,9 +30,9 @@ const RussianFlag = () => (
 );
 
 const languages = [
-  { code: "hy", name: "Hdelays", Flag: ArmenianFlag },
+  { code: "hy", name: "Հայերեն", Flag: ArmenianFlag },
   { code: "en", name: "English", Flag: EnglishFlag },
-  { code: "ru", name: "Rdelays", Flag: RussianFlag },
+  { code: "ru", name: "Русский", Flag: RussianFlag },
 ];
 
 const LanguageSelector = () => {

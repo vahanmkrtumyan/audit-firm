@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 import NavLinks from '../NavLinks';
 import MobileMenu from '../MobileMenu';
@@ -9,6 +10,8 @@ import MobileLogo from '../../assets/images/logo-light.png';
 
 const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
+    const {  t } = useTranslation();
+
         useEffect(() => {
             const checkDarkMode = () => {
             const hasDarkClass = document.body.classList.contains('dark-mode');
@@ -51,7 +54,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                         <div className="call-info">
                         <i className="fa-solid fa-phone ring__animation"/>
                         <div>
-                            <h6 className="title">Phone:</h6>
+                            <h6 className="title">{t("phone")}:</h6>
                             <Link to="/">012 210 001</Link>
                         </div>
                         </div>
@@ -73,7 +76,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                     <MobileMenu/>
                 </ul>
                 <div className="content-box d-none d-lg-block">
-                    <h4 className="title">About Us</h4>
+                    <h4 className="title">{t("aboutUs")}</h4>
                     <p className="text">Consultez is the go-to hub for early adopters and innovation enthusiasts, offering cutting technology widely.</p>
                 </div>
                     <ul className="contact-list-one">
