@@ -1,8 +1,8 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay} from "swiper/modules";
 import "swiper/css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import ServiceImage1 from '../../assets/images/shape/service-shape.png';
 import ServiceImage2 from '../../assets/images/shape/service-line.png';
 import ServiceImage3 from '../../assets/images/shape/service-arry.png';
@@ -34,6 +34,7 @@ const swiperOptions = {
 };
 
 function Service() {
+    const { t } = useTranslation();
 
   return (
     <>
@@ -47,14 +48,13 @@ function Service() {
       <div className="container">
 
         <div className="sec-title mb-50">
-          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Service area</h6>
-          <div className="flex-content">
-            <h2 className="title wow splt-txt" data-splitting>Empowering Your Brand <br /> Innovative Solutions</h2>
+          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">{t("services")}</h6>
+          {/* <div className="flex-content">
             <Link className="btn-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" to="/page-services">All Services</Link>
             <figure className="arry wow bounceInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
               <img className="animation__arryLeftRight" src={ServiceImage3} alt="Image" />
             </figure>
-          </div>
+          </div> */}
         </div>
 
         <div className="swiper service-slider">
@@ -78,7 +78,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">01</span>
-                    <h4 className="title"><Link to="/page-services">Market research</Link></h4>
+                    <h4 className="title"><Link to="/page-services">{t("audit")}</Link></h4>
                     <p className="text">Sed ut perspiciatis unde is voluptatem accusant</p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">02</span>
-                    <h4 className="title"><Link to="/page-services">Financial Consulting</Link></h4>
+                    <h4 className="title"><Link to="/page-services">{t("accounting")}</Link></h4>
                     <p className="text">Sed ut perspiciatis unde is voluptatem accusant</p>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">03</span>
-                    <h4 className="title"><Link to="/page-services">Branding Consulting</Link></h4>
+                    <h4 className="title"><Link to="/page-services">{t("financial")}</Link></h4>
                     <p className="text">Sed ut perspiciatis unde is voluptatem accusant</p>
                   </div>
                 </div>
@@ -179,8 +179,8 @@ function Service() {
                     <img src={ServiceImage4} alt="Image" />
                   </figure>
                   <div className="content">
-                    <span className="number">01</span>
-                    <h4 className="title"><Link to="/page-services">Market research</Link></h4>
+                    <span className="number">04</span>
+                    <h4 className="title"><Link to="/page-services">{t("businessConsulting")}</Link></h4>
                     <p className="text">Sed ut perspiciatis unde is voluptatem accusant</p>
                   </div>
                 </div>
@@ -222,8 +222,8 @@ function Service() {
                     <img src={ServiceImage4} alt="Image" />
                   </figure>
                   <div className="content">
-                    <span className="number">02</span>
-                    <h4 className="title"><Link to="/page-services">Financial Consulting</Link></h4>
+                    <span className="number">05</span>
+                    <h4 className="title"><Link to="/page-services">{t("legal")}</Link></h4>
                     <p className="text">Sed ut perspiciatis unde is voluptatem accusant</p>
                   </div>
                 </div>
@@ -250,8 +250,8 @@ function Service() {
                     <img src={ServiceImage4} alt="Image" />
                   </figure>
                   <div className="content">
-                    <span className="number">03</span>
-                    <h4 className="title"><Link to="/page-services">Branding Consulting</Link></h4>
+                    <span className="number">06</span>
+                    <h4 className="title"><Link to="/page-services">{t("training")}</Link></h4>
                     <p className="text">Sed ut perspiciatis unde is voluptatem accusant</p>
                   </div>
                 </div>

@@ -21,13 +21,13 @@ function Home1() {
           <About />
           <Service />
           <Choose />
-          <Growth />
-          <Processing />
-          <Case />
+          {/* <Growth /> */}
+          {/* <Processing /> */}
+          {/* <Case /> */}
           <Strategy />
-          <Team />
-          <Faqs />
-          <Testimonial />
+          {/* <Team /> */}
+          {/* <Faqs /> */}
+          {/* <Testimonial /> */}
           <News />
         </Layout>
       </div>

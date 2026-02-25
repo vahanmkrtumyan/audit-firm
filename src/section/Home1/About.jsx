@@ -44,21 +44,6 @@ function About() {
                   </p>
                 </div>
               </div>
-
-              {/* Footer info */}
-              <div className="info mt-50">
-                <Link to="/page-services" className="btn-two">
-                  Find Services
-                </Link>
-                <div className="user">
-                  <div className="image">
-                    <img src={AboutImage4} alt="Founder Portrait" />
-                  </div>
-                  <div>
-                    <p className="sub-title">Founder</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
