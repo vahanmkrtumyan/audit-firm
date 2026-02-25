@@ -25,9 +25,6 @@ const MobileMenu = () => {
         <Link to="/page-faq">{t("faq")}</Link>
       </li>
       <li>
-        <Link to="/page-pricing">{t("pricing")}</Link>
-      </li>
-      <li>
         <Link to="/page-contact">{t("contact")}</Link>
       </li>
     </ul>

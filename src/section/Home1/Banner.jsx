@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import DOMPurify from 'dompurify';
 import { Link } from "react-router-dom";
@@ -9,7 +9,6 @@ import "swiper/css/effect-fade";
 import BannerImage1 from '../../assets/images/banner/banner-image1.jpg';
 import BannerImage2 from '../../assets/images/banner/banner-image2.jpg';
 import BannerImage3 from '../../assets/images/banner/banner-image3.jpg';
-import BannerShapeImage from '../../assets/images/shape/banner-arry.png';
 import BannerShapeImage2 from '../../assets/images/shape/banner-shape.png';
 
 const slides = [
@@ -98,9 +97,6 @@ function Banner() {
 
   return (
     <section id="home" className="banner-section">
-      <div className="arry">
-        <img className="animation__arryLeftRight" src={BannerShapeImage} alt="Shape" />
-      </div>
       <div className="sec-shape">
         <img src={BannerShapeImage2} alt="Shape" />
       </div>

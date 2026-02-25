@@ -38,6 +38,12 @@ const resources = {
       sendEmail: "Send Email",
       workingHours: "Working Hours",
       aboutUs: "About Us",
+      aboutText1:
+        "TVS & Partners Consulting Group LLC was established in October 2025. The cornerstone of the company's foundation has been the provision of high-quality professional services to organizations across various sectors of the economy, leveraging the accumulated experience of a seasoned team, thereby shaping a distinct front for the expansion of a public-benefit mission and contributing to professional self-sufficiency.",
+      aboutText2:
+        "The company is specialized in providing audit and assurance, accounting and taxation, financial and managerial analysis, business consulting and comprehensive services, legal support, and organization of professional courses.",
+      aboutText3:
+        "We are committed to continuously and consistently providing our partners and stakeholders with relevant and useful advice, ensuring professional service, and keeping them informed of industry changes in a timely manner. This responsible commitment is an integral part of our daily work.",
       readMore: "Read More",
       learnMore: "Learn More",
       getStarted: "Get Started",
@@ -65,6 +71,9 @@ const resources = {
       news: "Նորություններ",
       contact: "Կապ",
       about: "Մեր մասին",
+      aboutText1: '«ԹիՎիԷս Ընդ Փարթներս Խորհրդատվական Խումբ» ՓԲԸ-ն հիմնադրվել է 2025 թվականի հոկտեմբեր ամսին։ Ընկերության հիմնադրման գրավականը հանդիսացել է փորձառու թիմի կուտակված փորձով տնտեսության տարբեր ոլորտի կազմակերպություններին մասնագիտական բարձրորակ ծառայությունների մատուցումը՝ այդպիսով ձևավորելով հանրօգուտ առաքելության ծավալման առանձին ճակատ և նպաստելով մասնագիտական ինքնաբավությանը։',
+      aboutText2: 'Ընկերությունը մասնագիտացած է աուդիտի և հավաստիացման, հաշվապահական և հարկային հաշվառման, ֆինանսական և կառավարչական վերլուծության, բիզնես խորհրդատվության և համալիր սպասարկման, իրավաբանական ուղեկցման և մասնագիտական դասընթացների կազմակերպման ծառայությունների մատուցման բնագավառներում։',
+      aboutText3: 'Մենք շարունակական ու հետևողական ջանքեր ենք ներդնում մեր գործընկերներին ու շահակիցներին պահանջված ու օգտակար խորհրդատվություն տրամադրելու, մասնագիտական սպասարկում ապահովելու և ոլորտային փոփոխություններին ճիշտ ժամանակին հաղորդակից դարձնելու հարցերում։ Մեր այս պատասխանատու հանձնառությունը մերօրյա աշխատանքի կարևորագույն ու անբաժան մասնիկն է։',
       faq: "Հաճախ տրվող հարցեր",
       pricing: "Գնային քայլեր",
       team: "Թիմ",
@@ -142,6 +151,12 @@ const resources = {
       sendEmail: "Отправить электронное письмо",
       workingHours: "Рабочие часы",
       aboutUs: "О нас",
+      aboutText1:
+        "ООО «ТВС и партнеры Консалтинг Групп» было основано в октябре 2025 года. Краеугольным камнем основания компании стало предоставление высококачественных профессиональных услуг организациям различных секторов экономики, используя накопленный опыт опытной команды, тем самым формируя отдельный фронт для расширения общественно полезной миссии и способствуя профессиональной самодостаточности.",
+      aboutText2:
+        "Компания специализируется на предоставлении услуг в области аудита и обеспечения достоверности, бухгалтерского и налогового учета, финансового и управленческого анализа, бизнес-консалтинга и комплексного обслуживания, юридической поддержки и организации профессиональных курсов.",
+      aboutText3:
+        "Мы прилагаем непрерывные и последовательные усилия для предоставления нашим партнерам и заинтересованным сторонам актуальных и полезных консультаций, обеспечения профессионального обслуживания и своевременного информирования их об изменениях в отрасли. Это ответственное обязательство является важной и неотъемлемой частью нашей повседневной работы.",
       readMore: "Читать далее",
       learnMore: "Узнать больше",
       getStarted: "Начать",
