@@ -63,9 +63,9 @@ function BannerSlide({ slide, isActive }) {
                   style={{ animationDelay: ".5s" }}
                   dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(slide.title) }}
                 />
-                <Link className="btn-one animated fadeInUp" style={{ animationDelay: ".8s" }} to="/page-contact">
+                {/* <Link className="btn-one animated fadeInUp" style={{ animationDelay: ".8s" }} to="/page-contact">
                   {slide.buttonText}
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="col-lg-4">

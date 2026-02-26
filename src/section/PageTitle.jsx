@@ -1,9 +1,10 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import PageTitleBG from '../assets/images/bg/page-title-bg.jpg';
 
 
 const PageTitle = (props) => {
+  const { t } = useTranslation();
     return (
         <>
         
@@ -11,7 +12,7 @@ const PageTitle = (props) => {
             <div className="auto-container">
                 <div className="title-outer">
                     <ul className="page-breadcrumb">
-                        <li><Link to="">Home</Link></li>
+                        <li><Link to="">{t('home')}</Link></li>
                         <li>{props.pageName}</li>
                     </ul>
                     <h1 className="title">{props.pageName}</h1>

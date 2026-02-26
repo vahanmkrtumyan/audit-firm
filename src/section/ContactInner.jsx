@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function ContactSection() {
+  const { t } = useTranslation();
+
    const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -60,7 +63,7 @@ function ContactSection() {
                       fill="#1A4137" />
                   </svg>
                 </div>
-                <h4 className="title">address line</h4>
+                <h4 className="title">{t("address")}</h4>
                 <p className="text">Երևան, 0033, Արաբկիր, 
                   Գյուլբենկյան փողոց, 27 շենք, 5/1 տարածք</p>
               </div>
@@ -83,7 +86,7 @@ function ContactSection() {
                   </svg>
 
                 </div>
-                <h4 className="title">address line</h4>
+                <h4 className="title">{t('phone')}</h4>
                 <p className="text">012 210 001
                   </p>
               </div>
@@ -99,7 +102,7 @@ function ContactSection() {
                       fill="#1A4137" />
                   </svg>
                 </div>
-                <h4 className="title">Mail Adress</h4>
+                <h4 className="title">{t("mail")}</h4>
                 <p className="text">info@tvs.am </p>
                 <p className="text"></p>
                 <p className="text"></p>
@@ -113,10 +116,8 @@ function ContactSection() {
             <div className="col-lg-6 content-column">
               <div className="inner-column">
                 <div className="sec-title mb-30">
-                  <h2 className="title wow splt-txt" data-splitting>Get in touch</h2>
-                  <p className="text wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Lorem ipsum dolor sit
-                    amet consectetur adipiscing elit mattis
-                    faucibus <br/> odio feugiat arc dolor.</p>
+                  <h2 className="title wow splt-txt" data-splitting>{t("getInTouch")}</h2>
+                 
                 </div>
                 <div className="google-map">
                   <iframe
@@ -135,8 +136,8 @@ function ContactSection() {
             <div className="col-lg-6 content-column">
               <div className="inner-column right-column">
                 <div className="sec-title mb-30">
-                  <h2 className="title wow splt-txt" data-splitting>Fill Up The Form</h2>
-                  <p className="text wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Your email address will not be published. Required fields are marked *</p>
+                  <h2 className="title wow splt-txt" data-splitting>{t("fillForm")}</h2>
+                  <p className="text wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">{t("requiredMarked")}</p>
                 </div>
                 <form id="contact_form" name="contact_form" onSubmit={handleSubmit}>
                   <div className="type-feild">
@@ -146,7 +147,7 @@ function ContactSection() {
                       id="contactName"
                       name="name"
                       type="text"
-                      placeholder="Your Name*"
+                      placeholder={t("yourName")}
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -160,7 +161,7 @@ function ContactSection() {
                       id="contactEmail"
                       name="email"
                       type="email"
-                      placeholder="Email Address*"
+                      placeholder={t("emailAddress")}
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -173,7 +174,7 @@ function ContactSection() {
                     <textarea
                       id="contactMessage"
                       name="message"
-                      placeholder="Enter Your Message here"
+                      placeholder={t("enterMessage")}
                       value={formData.message}
                       onChange={handleChange}
                       required
@@ -181,7 +182,7 @@ function ContactSection() {
                     />
                   </div>
                   <button type="submit" className="btn-two">
-                    <i className="fa-light fa-paper-plane"/> Get In Touch
+                    <i className="fa-light fa-paper-plane"/> {t('getInTouch')}
                   </button>
 
                   {status && <p className="mt-3">{status}</p>}
