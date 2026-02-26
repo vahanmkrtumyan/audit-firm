@@ -3,14 +3,16 @@ import Banner from "../section/Home1/Banner";
 import About from "../section/Home1/About";
 import Service from "../section/Home1/Service";
 import Choose from "../section/Home1/Choose";
-import Growth from "../section/Home1/Growth";
-import Processing from "../section/Home1/Processing";
-import Case from "../section/Home1/Case";
+// import Growth from "../section/Home1/Growth";
+// import Processing from "../section/Home1/Processing";
+// import Case from "../section/Home1/Case";
 import Strategy from "../section/Home1/Strategy";
-import Team from "../section/Home1/Team";
-import Faqs from "../section/Home1/Faqs";
-import Testimonial from "../section/Home1/Testimonial";
+// import Team from "../section/Home1/Team";
+// import Faqs from "../section/Home1/Faqs";
+// import Testimonial from "../section/Home1/Testimonial";
 import News from "../section/Home1/News";
+import OurTeam from "../section/Home1/OurTeam";
+import Values from "../section/Home1/Values";
 
 function Home1() {
   return (
@@ -20,7 +22,9 @@ function Home1() {
           <Banner />
           <About />
           <Service />
-          <Choose />
+          <OurTeam />
+          <Values />
+          {/* <Choose /> */}
           {/* <Growth /> */}
           {/* <Processing /> */}
           {/* <Case /> */}
