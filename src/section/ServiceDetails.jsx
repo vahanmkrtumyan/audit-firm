@@ -1,8 +1,4 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ServiceDetailsImage from '../assets/images/resource/service-details.jpg';
-import ServiceDetailsImage2 from '../assets/images/resource/service-details-2.jpg';
-import ServiceDetailsImage3 from '../assets/images/resource/service-details-3.jpg';
 import { useTranslation } from 'react-i18next';
 
 const serviceListData = [
@@ -32,23 +28,19 @@ const serviceListData = [
 	},
 ];
 
-function ServiceDetails({service}) {
-	const [isActive, setIsActive] = useState({
-		status: false,
-		key: 1,
-	});
-	const handleToggle = (key) => {
-		if (isActive.key === key) {
-			setIsActive({
-				status: false,
-			});
-		} else {
-			setIsActive({
-				status: true,
-				key,
-			});
-		}
-	};			
+
+const serviceSubDirections = {
+	audit: ["audit1", "audit2", "audit3", "audit4", "audit5", "audit6", "audit7"],
+	accounting: ["accounting1", "accounting2", "accounting3", "accounting4", "accounting5", "accounting6", "accounting7", "accounting8"],
+	financial: ["financial1", "financial2", "financial3", "financial4", "financial5", "financial6", "financial7", "financial8", "financial9"],
+	'business-consulting': ["businessConsulting1", "businessConsulting2", "businessConsulting3", "businessConsulting4", "businessConsulting5", "businessConsulting6"],
+	legal: ["legal1", "legal2", "legal3", "legal4", "legal5", "legal6", "legal7", "legal8", "legal9", "legal10"],
+	training: [],
+}
+
+
+
+function ServiceDetails({service}) {	
 
 	const { t } = useTranslation();	
 
@@ -80,7 +72,15 @@ function ServiceDetails({service}) {
 							<div className="service-nr-list">
 								<h3 className="mb-5">{t('subDirections')}</h3>
 								<div className="row">
-									<div className="col-lg-6">
+									{serviceSubDirections[service].map((eachitem, index) => (
+										<div className="col-lg-6">
+											<div className="nr-list mb-5">
+												<h4 className="title d-flex align-items-center mb-4"><span>{index + 1}</span> {t(eachitem)}</h4>
+												{/* <p>Creative analysis is important. It is common for marketers to measure campaign performance at a superficial level. But to fully understand it</p> */}
+											</div>
+										</div>
+									))}
+									{/* <div className="col-lg-6">
 									<div className="nr-list mb-5">
 										<h4 className="title d-flex align-items-center mb-4"><span>01</span> Creative Analysis</h4>
 										<p>Creative analysis is important. It is common for marketers to measure campaign performance at a superficial level. But to fully understand it</p>
@@ -103,7 +103,7 @@ function ServiceDetails({service}) {
 										<h4 className="title d-flex align-items-center mb-4"><span>04</span> Delivery & Deploy</h4>
 										<p>Continuous delivery is an extension of continuous integration since it automatically deploys all to a testing and/or production</p>
 									</div>
-									</div>
+									</div> */}
 								</div>
 							</div>
 							{/* <div className="content mt-40">
@@ -131,12 +131,11 @@ function ServiceDetails({service}) {
 								</ul>
 							</div>
 							<div className="sidebar-service-list mb-30">
-								<h4 className="title">Contact With us</h4>
+								<h4 className="title">{t('contactUs')}</h4>
 								<ul className="address">
-								<li>New South Head Rd, Double Bay</li>
-								<li>2028, New York</li>
-								<li><Link to="#">contact@fufo.com</Link></li>
-								<li><Link to="#">+1300 877 503</Link></li>
+								<li>{t('locationText')}</li>
+								<li><Link to="#">info@tvs.am</Link></li>
+								<li><Link to="#">012 210 001</Link></li>
 								</ul>
 							</div>
 							
