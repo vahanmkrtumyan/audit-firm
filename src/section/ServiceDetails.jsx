@@ -4,27 +4,27 @@ import { useTranslation } from 'react-i18next';
 const serviceListData = [
 	{
 		title: "audit",
-		linkurl: "services/audit"
+		linkurl: "/services/audit"
 	},
 	{
 		title: "accounting",
-		linkurl: "services/accounting"
+		linkurl: "/services/accounting"
 	},
 	{
 		title: "financial",
-		linkurl: "services/financial"
+		linkurl: "/services/financial"
 	},
 	{
 		title: "business-consulting",
-		linkurl: "services/business-consulting"
+		linkurl: "/services/business-consulting"
 	},
 	{
 		title: "legal",
-		linkurl: "services/legal"
+		linkurl: "/services/legal"
 	},
 	{
 		title: "training",
-		linkurl: "services/training"
+		linkurl: "/services/training"
 	},
 ];
 
@@ -33,7 +33,7 @@ const serviceSubDirections = {
 	audit: ["audit1", "audit2", "audit3", "audit4", "audit5", "audit6", "audit7"],
 	accounting: ["accounting1", "accounting2", "accounting3", "accounting4", "accounting5", "accounting6", "accounting7", "accounting8"],
 	financial: ["financial1", "financial2", "financial3", "financial4", "financial5", "financial6", "financial7", "financial8", "financial9"],
-	'business-consulting': ["businessConsulting1", "businessConsulting2", "businessConsulting3", "businessConsulting4", "businessConsulting5", "businessConsulting6"],
+	'business-consulting': ["business-consulting1", "business-consulting2", "business-consulting3", "business-consulting4", "business-consulting5", "business-consulting6"],
 	legal: ["legal1", "legal2", "legal3", "legal4", "legal5", "legal6", "legal7", "legal8", "legal9", "legal10"],
 	training: [],
 }
@@ -43,6 +43,8 @@ const serviceSubDirections = {
 function ServiceDetails({service}) {	
 
 	const { t } = useTranslation();	
+
+	console.log(`${service}Text`)
 
 	return (
 		<>
@@ -70,7 +72,9 @@ function ServiceDetails({service}) {
 							<h3>{t('description')}</h3>
 							<p className="mb-30">{t(`${service}Text`)}</p>
 							<div className="service-nr-list">
-								<h3 className="mb-5">{t('subDirections')}</h3>
+								{serviceSubDirections[service].length > 0 && (
+									<h3 className="mb-5">{t('subDirections')}</h3>
+								)}
 								<div className="row">
 									{serviceSubDirections[service].map((eachitem, index) => (
 										<div className="col-lg-6">

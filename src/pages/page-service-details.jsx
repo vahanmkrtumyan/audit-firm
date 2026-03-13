@@ -3,13 +3,20 @@ import Layout from '../layouts/Layout';
 import PageTitle from "../section/PageTitle";
 import { useTranslation } from 'react-i18next';
 import ServiceDetails from "../section/ServiceDetails";
+import { useLocation} from 'react-router-dom';
+
 
 
 function ServiceDetailPage() {
+const { pathname } = useLocation();
+
   const { t } = useTranslation();
 
-  const path = window.location.pathname;
-  const serviceName = path.split("/").pop(); // Get the last part of the URL    
+  console.log(pathname)
+
+  const serviceName = pathname.split("/").pop(); // Get the last part of the URL    
+
+
     return (
         <>
 
