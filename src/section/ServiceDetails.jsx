@@ -42,9 +42,7 @@ const serviceSubDirections = {
 
 function ServiceDetails({service}) {	
 
-	const { t } = useTranslation();	
-
-	console.log(`${service}Text`)
+	const { t } = useTranslation();
 
 	return (
 		<>

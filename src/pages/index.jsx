@@ -28,11 +28,11 @@ function Home1() {
           {/* <Growth /> */}
           {/* <Processing /> */}
           {/* <Case /> */}
-          <Strategy />
+          {/* <Strategy /> */}
           {/* <Team /> */}
           {/* <Faqs /> */}
           {/* <Testimonial /> */}
-          <News />
+          {/* <News /> */}
         </Layout>
       </div>
     </>

@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import AboutImage1 from "../../assets/images/about/about-image1.jpg";
 import AboutImage3 from "../../assets/images/about/about-image2.jpg";
-import AboutImage4 from "../../assets/images/about/about-user.png";
 
 function About() {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
 
 function Navigation() {
@@ -9,7 +9,7 @@ function Navigation() {
       <li className="dropdown">
         <Link to="/">{t("home")}</Link>
       </li>
-      <li className="dropdown">
+      {/* <li className="dropdown">
         <Link to="#">{t("pages")}</Link>
         <div className="dropdown-btn">
           <i className="fa fa-angle-down"></i>
@@ -35,7 +35,7 @@ function Navigation() {
               </li>
             </ul>
           </li>
-          {/* <li className="dropdown">
+          <li className="dropdown">
             <Link to="#">Shop</Link>
             <ul>
               <li>
@@ -54,15 +54,13 @@ function Navigation() {
                 <Link to="/shop-checkout">Checkout</Link>
               </li>
             </ul>
-          </li> */}
+          </li>
           <li>
             <Link to="/page-testimonial">{t("testimonials")}</Link>
           </li>
-          {/* <li>
-            <Link to="/page-404">404</Link>
-          </li> */}
+       
         </ul>
-      </li>
+      </li> */}
       <li className="dropdown">
         <Link to="#">{t("services")}</Link>
         <div className="dropdown-btn">
@@ -120,9 +118,9 @@ function Navigation() {
       <li>
         <Link to="/page-contact">{t("contact")}</Link>
       </li>
-      <li>
-        <Link to="/page-about">{t("about")}</Link>
-      </li>
+      {/* <li>
+        <HashLink to="/#about">{t("about")}</HashLink>
+      </li> */}
       <li className="language-nav-item">
         <LanguageSelector />
       </li>
