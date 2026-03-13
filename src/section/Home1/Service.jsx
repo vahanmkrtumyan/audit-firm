@@ -180,7 +180,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">04</span>
-                    <h4 className="title"><Link to="/page-services">{t("businessConsulting")}</Link></h4>
+                    <h4 className="title"><Link to="/page-services">{t("business-consulting")}</Link></h4>
                     <p className="text">Sed ut perspiciatis unde is voluptatem accusant</p>
                   </div>
                 </div>

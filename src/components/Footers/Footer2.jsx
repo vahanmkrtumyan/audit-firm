@@ -27,7 +27,7 @@ function Footer2() {
                                     <li><Link to="/services/audit">{t("audit")}</Link></li>
                                     <li><Link to="/services/accounting">{t("accounting")}</Link></li>
                                     <li><Link to="/services/financial">{t("financial")}</Link></li>
-                                    <li><Link to="/services/business-consulting">{t("businessConsulting")}</Link></li>
+                                    <li><Link to="/services/business-consulting">{t("business-consulting")}</Link></li>
                                     <li><Link to="/services/legal">{t("legal")}</Link></li>
                                     <li><Link to="/services/training">{t("training")}</Link></li>
                                 </ul>

@@ -40,12 +40,14 @@ import ShopCheckout from "./pages/shop-checkout";
 import ShopProductDetails from "./pages/shop-product-details";
 import ShopSidebar from "./pages/shop-products-sidebar";
 import ShopProducts from "./pages/shop-products";
+import ServiceDetailPage from "./pages/page-service-details";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home1 />} />
+        <Route path="/services/:page" element={<ServiceDetailPage />} />
         <Route path="/index-1-single" element={<Home1Single />} />
         <Route path="/index-1-dark" element={<Home1Dark />} />
         <Route path="/index-2" element={<Home2 />} />

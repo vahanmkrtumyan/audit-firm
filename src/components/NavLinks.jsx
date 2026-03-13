@@ -70,10 +70,22 @@ function Navigation() {
         </div>
         <ul>
           <li>
-            <Link to="/page-services">{t("servicesList")}</Link>
+            <Link to="/services/audit">{t("audit")}</Link>
           </li>
           <li>
-            <Link to="/page-service-details">{t("serviceDetails")}</Link>
+            <Link to="/services/accounting">{t("accounting")}</Link>
+          </li>
+          <li>
+            <Link to="/services/financial">{t("financial")}</Link>
+          </li>
+          <li>
+            <Link to="/services/legal">{t("business-consulting")}</Link>
+          </li>
+          <li>
+            <Link to="/services/legal">{t("legal")}</Link>
+          </li>
+          <li>
+            <Link to="/services/training">{t("training")}</Link>
           </li>
         </ul>
       </li>
