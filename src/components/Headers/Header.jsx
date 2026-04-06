@@ -54,8 +54,8 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                         <div className="call-info">
                         <i className="fa-solid fa-phone ring__animation"/>
                         <div>
-                            <h6 className="title">{t("phone")}:</h6>
-                            <Link to="/">012 210 001</Link>
+                            <h6 className="title">{t("phone")}</h6>
+                            <Link to="/">+37443210040</Link>
                         </div>
                         </div>
                     </div>

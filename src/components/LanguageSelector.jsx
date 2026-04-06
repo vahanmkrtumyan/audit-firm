@@ -68,7 +68,7 @@ const LanguageSelector = () => {
         aria-label="Select language"
       >
         <currentLang.Flag />
-        <span className="lang-code">{currentLang.code.toUpperCase()}</span>
+        <span className="lang-code">{currentLang.code === 'hy' ? 'ARM' : currentLang.code.toUpperCase()}</span>
         <i className={`fa fa-angle-down ${isOpen ? "rotated" : ""}`}></i>
       </button>
 

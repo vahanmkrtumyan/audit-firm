@@ -64,8 +64,7 @@ function ContactSection() {
                   </svg>
                 </div>
                 <h4 className="title">{t("address")}</h4>
-                <p className="text">Երևան, 0033, Արաբկիր, 
-                  Գյուլբենկյան փողոց, 27 շենք, 5/1 տարածք</p>
+                <p className="text">{t("locationText")}</p>
               </div>
             </div>
           </div>
@@ -87,8 +86,8 @@ function ContactSection() {
 
                 </div>
                 <h4 className="title">{t('phone')}</h4>
-                <p className="text">012 210 001
-                  </p>
+                <p className="text">012 210 001</p>
+                <p className="text">+ 374 43 210 040</p>
               </div>
             </div>
           </div>
@@ -121,7 +120,7 @@ function ContactSection() {
                 </div>
                 <div className="google-map">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.409430456686!2d44.49655011218!3d40.19535057135719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd0019f9b4f3%3A0x178792551875a28a!2z1LPVtdW41oLVrNWi1aXVttWv1bXVodW2Mjk!5e1!3m2!1sen!2sam!4v1770658352547!5m2!1sen!2sam"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.2316747486293!2d44.49416941218015!3d40.198609671356536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd152c954189%3A0xeb576586a0433c9b!2s27%20Gyulbenkyan%20St%2C%20Yerevan%200033!5e1!3m2!1sen!2sam!4v1775500674461!5m2!1sen!2sam"
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"

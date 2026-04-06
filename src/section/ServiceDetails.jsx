@@ -49,12 +49,6 @@ function ServiceDetails({service}) {
 		<section className="services-details pt-120 pb-120">
 			<div className="container">
 				<div className="row align-items-lg-center">
-					<div className="col-lg-6">
-						<div className="sec-title mb-40">
-							<h2 className="title mb-30 wow splt-txt" data-splitting>{t(service)}<br className="d-none d-lg-block"/></h2>
-						</div>
-					</div>
-					
 				</div>
 				<div className="row">
 					<div className="col-lg-6">
@@ -77,7 +71,7 @@ function ServiceDetails({service}) {
 									{serviceSubDirections[service].map((eachitem, index) => (
 										<div className="col-lg-6">
 											<div className="nr-list mb-5">
-												<h4 className="title d-flex align-items-center mb-4"><span>{index + 1}</span> {t(eachitem)}</h4>
+												<h4 className="title d-flex align-items-center mb-4"><span>*</span> {t(eachitem)}</h4>
 												{/* <p>Creative analysis is important. It is common for marketers to measure campaign performance at a superficial level. But to fully understand it</p> */}
 											</div>
 										</div>
@@ -128,7 +122,7 @@ function ServiceDetails({service}) {
 								<h4 className="title">{t('moreServices')}</h4>
 								<ul>
 									{serviceListData.map((eachitem, index) => (
-									<li key={index}><Link className={(index === 0) ? 'current': ''} to={eachitem.linkurl}><i className="far fa-arrow-right" /><span>{t(eachitem.title)}</span></Link></li>
+									<li className='underline' key={index}><Link className={(index === 0) ? 'current': ''} to={eachitem.linkurl}><span>{t(eachitem.title)}</span></Link></li>
 									))}
 								</ul>
 							</div>
