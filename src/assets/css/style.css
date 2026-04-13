@@ -54,7 +54,7 @@ License: copyright commercial
   --theme-color-black: #000000;
   --theme-color-black-rgb: 0, 0, 0;
   --theme-color-silver: #C4C4C4;
-  --theme-color1: #c6d936;
+  --theme-color1: #286100;
   --theme-color1-rgb: 198, 217, 54;
   --theme-color2: #1a4137;
   --theme-color2-rgb: 26, 65, 55;
@@ -490,7 +490,7 @@ figure.image {
   min-width: 300px;
   z-index: 99;
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: #f2f7f3;
 }
 .page-wrapper.gray-bg {
   background-color: #f4f3ee;
@@ -3896,7 +3896,7 @@ Main Header
   cursor: pointer;
 }
 .header-style-one .main-box, .header-style-seven .main-box, .header-style-six .main-box, .header-style-five .main-box, .header-style-four .main-box, .header-style-three .main-box, .header-style-two .main-box {
-  background-color: var(--theme-color-light);
+  background-color: #f2f7f3;
   padding: 20px;
   max-width: 1450px;
   margin: 0 auto;
