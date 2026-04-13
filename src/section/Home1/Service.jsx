@@ -5,11 +5,13 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ServiceImage1 from '../../assets/images/shape/service-shape.png';
 import ServiceImage2 from '../../assets/images/shape/service-line.png';
-import ServiceImage3 from '../../assets/images/shape/service-arry.png';
 import ServiceImage4 from '../../assets/images/shape/service-item-shape.png';
 import ServiceImage5 from '../../assets/images/service/service-image1.jpg';
 import ServiceImage6 from '../../assets/images/service/service-image2.jpg';
 import ServiceImage7 from '../../assets/images/service/service-image3.jpg';
+import ServiceImage8 from '../../assets/images/service/service-image5.jpg';
+import ServiceImage9 from '../../assets/images/service/service-image6.jpg';
+import ServiceImage10 from '../../assets/images/service/service-image7.jpg';
 
 const swiperOptions = {
     modules: [Autoplay],
@@ -129,7 +131,7 @@ function Service() {
                 </div>
                 <div className="image-box">
                   <figure className="image">
-                    <img src={ServiceImage5} alt="Image" />
+                    <img src={ServiceImage8} alt="Image" />
                   </figure>
                 </div>
               </div>
@@ -148,7 +150,7 @@ function Service() {
                 </div>
                 <div className="image-box">
                   <figure className="image">
-                    <img src={ServiceImage6} alt="Image" />
+                    <img src={ServiceImage9} alt="Image" />
                   </figure>
                 </div>
               </div>
@@ -167,7 +169,7 @@ function Service() {
                 </div>
                 <div className="image-box">
                   <figure className="image">
-                    <img src={ServiceImage7} alt="Image" />
+                    <img src={ServiceImage10} alt="Image" />
                   </figure>
                 </div>
               </div>
