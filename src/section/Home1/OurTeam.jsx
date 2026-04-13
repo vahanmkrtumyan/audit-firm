@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
-import AboutImage1 from "../../assets/images/about/about-image1.jpg";
-import AboutImage3 from "../../assets/images/about/about-image2.jpg";
+import AboutImage1 from "../../assets/images/team/team-one.jpg";
+import AboutImage3 from "../../assets/images/team/team-two.jpg";
 
 function OurTeam() {
   const { t } = useTranslation();

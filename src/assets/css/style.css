@@ -5547,8 +5547,8 @@ Section Title
   z-index: 1;
 }
 .banner-section .banner-slider .swiper-slide-active .slide-bg {
-  -webkit-transform: scale(1.12);
-  transform: scale(1.12);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 @media (max-width: 1199.98px) {
   .banner-section .arry {

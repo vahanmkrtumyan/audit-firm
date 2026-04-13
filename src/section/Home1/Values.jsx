@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
-import AboutImage1 from "../../assets/images/about/about-image1.jpg";
-import AboutImage3 from "../../assets/images/about/about-image2.jpg";
+import AboutImage1 from "../../assets/images/values/values-one.jpg";
+import AboutImage3 from "../../assets/images/values/values-two.jpg";
 
 function Values() {
   const { t } = useTranslation();
